@@ -1,0 +1,13 @@
+# nvcr.io/nvidia/pytorch:21.10-py3
+scikit-learn
+torch
+numpy 
+pandas
+scipy 
+tqdm 
+open-clip-torch 
+transformers 
+Pillow==8.4.0 # this is needed for reproducing clipscore(https://github.com/jmhessel/clipscore/issues/16)
+# (optional)
+# datasets # needs Pillow==9.4.0
+# tensorflow # needs for richhf
