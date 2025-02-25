@@ -1,7 +1,7 @@
 <div align="center">
     
 # Extract Free Dense Misalignment from CLIP (AAAI'25)
- [![Paper](https://img.shields.io/badge/Paper-arxiv.2412.18404-green)](https://arxiv.org/abs/2412.18404)
+ [![Paper](https://img.shields.io/badge/Paper-arxiv.2412.18404-green)](https://arxiv.org/abs/2412.18404) [![Colab](https://img.shields.io/badge/Code-Colab-orange)](https://colab.research.google.com/drive/1UV8GMhj1VCV9QboucGSnSIo95UWWK6eY?usp=sharing) [![Poster](https://img.shields.io/badge/Poster-pdf-blue)](./misc/CLIP4DM_poster.pdf)
 <p align="center">
   <img width="513" alt="image" src="misc/thumbnail.png">
 </p>
