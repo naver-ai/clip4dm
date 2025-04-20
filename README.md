@@ -1,13 +1,14 @@
 <div align="center">
     
 # Extract Free Dense Misalignment from CLIP (AAAI'25)
- [![Paper](https://img.shields.io/badge/Paper-arxiv.2412.18404-green)](https://arxiv.org/abs/2412.18404) [![Colab](https://img.shields.io/badge/Code-Colab-orange)](https://colab.research.google.com/drive/1UV8GMhj1VCV9QboucGSnSIo95UWWK6eY?usp=sharing) [![Poster](https://img.shields.io/badge/Poster-pdf-blue)](./misc/CLIP4DM_poster.pdf)
+ [![AAAI](https://img.shields.io/badge/Paper-AAAI'25-yellow)](https://ojs.aaai.org/index.php/AAAI/article/view/32660)
+ [![arxiv](https://img.shields.io/badge/Paper-arxiv.2412.18404-green)](https://arxiv.org/abs/2412.18404) [![Colab](https://img.shields.io/badge/Code-Colab-orange)](https://colab.research.google.com/drive/1UV8GMhj1VCV9QboucGSnSIo95UWWK6eY?usp=sharing) [![Poster](https://img.shields.io/badge/Poster-pdf-blue)](./misc/CLIP4DM_poster.pdf)
 <p align="center">
   <img width="513" alt="image" src="misc/thumbnail.png">
 </p>
 </div>
 
-> Recent vision-language foundation models still frequently produce outputs misaligned with their inputs, evidenced by object hallucination in captioning and prompt misalignment in the text-to-image generation model. Recent studies have explored methods for identifying misaligned elements, aiming not only to enhance interpretability but also to improve model performance. However, current approaches primarily rely on large foundation models in a zero-shot manner or fine-tuned models with human annotations, which limits scalability due to significant computational costs. This work proposes a novel approach, dubbed CLIP4DM, for detecting dense misalignments from pre-trained CLIP, specifically focusing on pinpointing misaligned words between image and text. We carefully revamp the gradient-based attribution computation method, enabling negative gradient of individual text tokens to indicate misalignment. We also propose F-CLIPScore, which aggregates misaligned attributions with a global alignment score. We evaluate our method on various dense misalignment detection benchmarks, covering various image and text domains and misalignment types. Our method demonstrates state-of-the-art performance among zero-shot models and competitive performance with fine-tuned models while maintaining superior efficiency. Our qualitative examples show that our method has a unique strength to detect entity-level objects, intangible objects, and attributes that can not be easily detected for existing works. We conduct ablation studies and analyses to highlight the strengths and limitations of our approach. 
+> Recent vision-language generative models still frequently produce outputs misaligned with their inputs, evidenced by object hallucination in captioning and prompt misalignment in the text-to-image generation model. Recent studies have explored methods for identifying misaligned elements, aiming not only to enhance interpretability but also to improve model performance. However, current approaches primarily rely on large foundation models in a zero-shot manner or fine-tuned models with human annotations, which limits scalability due to significant computational costs. This work proposes a novel approach, dubbed CLIP4DM, for detecting dense misalignments from pre-trained CLIP, specifically focusing on pinpointing misaligned words between image and text. We carefully revamp the gradient-based attribution computation method, enabling negative gradient of individual text tokens to indicate misalignment. We also propose F-CLIPScore, which aggregates misaligned attributions with a global alignment score. We evaluate our method on various dense misalignment detection benchmarks, covering various image and text domains and misalignment types. Our method demonstrates state-of-the-art performance among zero-shot models and competitive performance with fine-tuned models while maintaining superior efficiency. Our qualitative examples show that our method has a unique strength to detect entity-level objects, intangible objects, and attributes that can not be easily detected for existing works. We conduct ablation studies and analyses to highlight the strengths and limitations of our approach.
 
 ## setup
 To set up the environment, start with the following base image and install the required dependencies:
@@ -99,7 +100,18 @@ We would like to express our gratitude to the following open-source projects, wh
 - [OpenCLIP](https://github.com/mlfoundations/open_clip)
 - [Transformers](https://github.com/huggingface/transformers)
 
-
+## How to cite
+```
+@inproceedings{nam2025extract,
+  title={Extract free dense misalignment from CLIP},
+  author={Nam, JeongYeon and Im, Jinbae and Kim, Wonjae and Kil, Taeho},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={6},
+  pages={6173--6181},
+  year={2025}
+}
+```
 ## License
 ```
 CLIP4DM
